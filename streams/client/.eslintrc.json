@@ -33,7 +33,7 @@
     ],
     "arrow-body-style": [
       2,
-      "as-needed"
+      "always"
     ],
     "no-unused-expressions": [
       2,
