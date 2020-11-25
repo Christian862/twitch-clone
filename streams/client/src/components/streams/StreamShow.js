@@ -1,5 +1,7 @@
 import React from 'react';
 
-const StreamShow = () => <div>StreamShow</div>;
+const StreamShow = () => {
+  return <div>StreamShow</div>;
+};
 
 export default StreamShow;
