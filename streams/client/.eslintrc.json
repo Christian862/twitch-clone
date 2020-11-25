@@ -48,6 +48,9 @@
       }
     ],
     "no-console": 0,
+    "react/prop-types": 0,
+    "no-else-return": 0,
+    "react/state-in-constructor": 0,
     "import/prefer-default-export": 1,
     "import": 0,
     "func-names": 0,
