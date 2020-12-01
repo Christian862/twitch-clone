@@ -2,15 +2,16 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable class-methods-use-this */
 import React from 'react';
-import { Field, formValues, reduxForm } from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
+import { createStream } from '../../actions';
 
 class StreamCreate extends React.Component {
-  onSubmit(formValues) {
-    console.log(formValues);
-  }
+  onSubmit = (formValues) => {
+    this.props.createStream(formValues);
+  };
 
   renderError({ error, touched }) {
-    console.log(touched);
     if (touched && error) {
       return (
         <div className="ui error message">
@@ -70,4 +71,6 @@ const validate = (formValues) => {
   return errors;
 };
 
-export default reduxForm({ form: 'streamCreate', validate })(StreamCreate);
+const formWrapped = reduxForm({ form: 'streamCreate', validate })(StreamCreate);
+
+export default connect(null, { createStream })(formWrapped);
