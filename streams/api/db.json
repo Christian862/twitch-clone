@@ -1,14 +1,28 @@
 {
   "streams": [
     {
-      "title": "Test stream",
-      "description": "test description",
+      "title": "A Stream",
+      "description": "A River",
+      "userId": "115752212371876410838",
       "id": 1
     },
     {
-      "title": "Another",
-      "description": "another one",
+      "title": "This is a stream",
+      "description": "It seems to be working",
+      "userId": "115752212371876410838",
       "id": 2
+    },
+    {
+      "title": "Just Kidding!",
+      "description": "It's not working",
+      "userId": "115752212371876410838",
+      "id": 3
+    },
+    {
+      "title": "FuckFuck",
+      "description": "Damnit - my hit single",
+      "userId": "115752212371876410838",
+      "id": 4
     }
   ]
 }

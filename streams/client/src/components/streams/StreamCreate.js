@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable class-methods-use-this */
@@ -46,9 +47,7 @@ class StreamCreate extends React.Component {
           component={this.renderInput}
           label="Enter Description"
         />
-        <button type="submit" className="ui button primary">
-          Submit
-        </button>
+        <button className="ui button primary">Submit</button>
       </form>
     );
   }
