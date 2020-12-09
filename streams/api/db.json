@@ -20,9 +20,32 @@
     },
     {
       "title": "FuckFuck",
-      "description": "Damnit - my hit single",
+      "description": "this edit was a PATCH request",
       "userId": "115752212371876410838",
       "id": 4
+    },
+    {
+      "title": "I think its actually working",
+      "description": "A STREAM thats edited",
+      "id": 5
+    },
+    {
+      "title": "If brooks babble what do streams do ?",
+      "description": "flow ? rush ? roar ? splash ?",
+      "userId": "115752212371876410838",
+      "id": 6
+    },
+    {
+      "title": "Is this working",
+      "description": "I think so!",
+      "userId": "115752212371876410838",
+      "id": 7
+    },
+    {
+      "title": "Stream Component Reuse!",
+      "description": "An example of component reuse changed",
+      "userId": "115752212371876410838",
+      "id": 8
     }
   ]
 }
