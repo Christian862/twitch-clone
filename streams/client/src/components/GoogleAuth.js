@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import { connect } from 'react-redux';
@@ -49,22 +50,14 @@ class GoogleAuth extends React.Component {
       return null;
     } else if (isSignedIn) {
       return (
-        <button
-          onClick={this.onSignOutClick}
-          type="button"
-          className="ui red google button"
-        >
+        <button onClick={this.onSignOutClick} className="ui red google button">
           <i className="google icon" />
           Sign Out
         </button>
       );
     } else {
       return (
-        <button
-          onClick={this.onSignInClick}
-          type="button"
-          className="ui red google button"
-        >
+        <button onClick={this.onSignInClick} className="ui red google button">
           <i className="google icon" />
           Sign In with Google
         </button>
