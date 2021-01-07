@@ -7,6 +7,7 @@ import { Field, reduxForm } from 'redux-form';
 
 class StreamForm extends React.Component {
   onSubmit = (formValues) => {
+    console.log(formValues);
     this.props.onSubmit(formValues);
   };
 
@@ -22,7 +23,9 @@ class StreamForm extends React.Component {
 
   // redux-form Field component passes a bunch of props to the prop 'component'
   // by default. As well, it passes any other props
-  renderInput = ({ input, label, meta }) => {
+  renderInput = (formValues) => {
+    const { input, label, meta } = formValues;
+
     const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
     return (
       <div className={className}>
